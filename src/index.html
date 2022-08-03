@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Aptos Logo</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="logo-container">
+        <div class="text">
+            <p>APTOS * BLOCKCHAIN * LAYER 1 *</p>
+        </div>
+        <div class="logo">
+            <div class="line"></div>
+            <div class="line">
+                <div class="triangle"></div>
+            </div>
+            <div class="line">
+                <div class="triangle"></div>
+            </div>
+            <div class="line">
+                <div class="triangle"></div>
+            </div>
+            <div class="line">
+                <div class="triangle"></div>
+            </div>
+            <div class="line">
+                <div class="triangle"></div>
+            </div>
+            <div class="line">
+                <div class="triangle"></div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const text = document.querySelector(".text p")
+        text.innerHTML = text.innerText
+            .split("")
+            .map((char, i) => `<span style="transform: rotate(${i * 11.5}deg)">${char}</span>`)
+            .join("")
+    </script>
+</body>
+</html>

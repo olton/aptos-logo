@@ -1,0 +1,118 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Consolas;
+}
+body {
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.logo-container {
+  display: block;
+  position: relative;
+  width: 300px;
+  height: 300px;
+}
+.logo {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: white;
+  border: 1px solid #000;
+  overflow: hidden;
+  transform: scale(0.7);
+}
+.line {
+  height: calc(100% / 7 - 4px);
+  position: relative;
+  overflow: visible;
+}
+.line:nth-child(1) {
+  height: calc(100% / 7 + 20px);
+}
+.line:nth-child(odd) {
+  background: #fff;
+}
+.line:nth-child(even) {
+  background: #000;
+}
+.triangle {
+  width: 0;
+  height: 0;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  border-bottom: 15px solid black;
+  position: absolute;
+  top: -15px;
+  z-index: 1;
+  transform: translateX(-300px);
+  animation: slide 2s infinite;
+}
+.line:nth-child(2) .triangle {
+  left: 225px;
+  animation-delay: 0.5s;
+}
+.line:nth-child(3) .triangle {
+  left: 190px;
+  border-bottom-color: #fff;
+  animation-delay: 0.6s;
+}
+.line:nth-child(4) .triangle {
+  left: 155px;
+  animation-delay: 0.7s;
+}
+.line:nth-child(5) .triangle {
+  left: 120px;
+  border-bottom-color: #fff;
+  animation-delay: 0.8s;
+}
+.line:nth-child(6) .triangle {
+  left: 85px;
+  animation-delay: 0.9s;
+}
+.line:nth-child(7) .triangle {
+  left: 50px;
+  border-bottom-color: #fff;
+  animation-delay: 1s;
+}
+@keyframes slide {
+  30% {
+    transform: translateX(0);
+  }
+  70% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(300px);
+    animation-delay: 1s;
+  }
+}
+.text {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transform: rotate(-24deg);
+  animation: rotateText 10s linear infinite;
+}
+.text span {
+  position: absolute;
+  left: 50%;
+  font-size: 1.4em;
+  transform-origin: 0 150px;
+  font-weight: bold;
+}
+@keyframes rotateText {
+  0% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+/*# sourceMappingURL=index.css.map */
