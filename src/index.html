@@ -6,39 +6,72 @@
     <link rel="stylesheet" href="index.css">
 </head>
 <body>
-    <div class="logo-container">
-        <div class="text">
-            <p>APTOS * BLOCKCHAIN * LAYER 1 *</p>
+    <div class="side dark-mode dark-side">
+        <div class="logo-container">
+            <div class="text">
+                <p>APTOS * BLOCKCHAIN * LAYER 1 *</p>
+            </div>
+            <div class="logo">
+                <div class="line"></div>
+                <div class="line">
+                    <div class="triangle"></div>
+                </div>
+                <div class="line">
+                    <div class="triangle"></div>
+                </div>
+                <div class="line">
+                    <div class="triangle"></div>
+                </div>
+                <div class="line">
+                    <div class="triangle"></div>
+                </div>
+                <div class="line">
+                    <div class="triangle"></div>
+                </div>
+                <div class="line">
+                    <div class="triangle"></div>
+                </div>
+            </div>
         </div>
-        <div class="logo">
-            <div class="line"></div>
-            <div class="line">
-                <div class="triangle"></div>
+    </div>
+
+    <div class="side">
+        <div class="logo-container">
+            <div class="text">
+                <p>APTOS * BLOCKCHAIN * LAYER 1 *</p>
             </div>
-            <div class="line">
-                <div class="triangle"></div>
-            </div>
-            <div class="line">
-                <div class="triangle"></div>
-            </div>
-            <div class="line">
-                <div class="triangle"></div>
-            </div>
-            <div class="line">
-                <div class="triangle"></div>
-            </div>
-            <div class="line">
-                <div class="triangle"></div>
+            <div class="logo">
+                <div class="line"></div>
+                <div class="line">
+                    <div class="triangle"></div>
+                </div>
+                <div class="line">
+                    <div class="triangle"></div>
+                </div>
+                <div class="line">
+                    <div class="triangle"></div>
+                </div>
+                <div class="line">
+                    <div class="triangle"></div>
+                </div>
+                <div class="line">
+                    <div class="triangle"></div>
+                </div>
+                <div class="line">
+                    <div class="triangle"></div>
+                </div>
             </div>
         </div>
     </div>
 
     <script>
-        const text = document.querySelector(".text p")
-        text.innerHTML = text.innerText
-            .split("")
-            .map((char, i) => `<span style="transform: rotate(${i * 11.5}deg)">${char}</span>`)
-            .join("")
+        const text = document.querySelectorAll(".text p")
+        for(let el of text) {
+            el.innerHTML = el.innerText
+                .split("")
+                .map((char, i) => `<span style="transform: rotate(${i * 11.5}deg)">${char}</span>`)
+                .join("")
+        }
     </script>
 </body>
 </html>
