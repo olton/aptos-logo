@@ -10,22 +10,38 @@
 }
 
 body {
-  height: 100vh;
+  min-height: 100vh;
   margin: 0;
   padding: 0;
   display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-flow: column;
+  align-items: stretch;
+  justify-content: stretch;
+  flex-flow: column wrap;
+}
+
+.side-wrapper {
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    flex-flow: row;
+  }
+
+  .side-wrapper {
+    width: 50%;
+  }
 }
 
 .side {
-  height: 50%;
+  height: 100%;
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-flow: column;
+  flex: 1 1 320px;
+  min-height: 320px;
 }
 
 .logo-container {
