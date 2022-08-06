@@ -21,11 +21,39 @@
         button {
             margin-bottom: 20px;
         }
+
+        .example {
+            margin-top: 20px;
+            font-family: "Fira Code",serif;
+            border: 1px solid gray;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+        }
     </style>
 </head>
 <body>
     <button onclick="toggle()">Toggle theme</button>
     <aptos-logo></aptos-logo>
+    <div class="example">
+        <h1>Example of usage</h1>
+        <pre>
+            <cord>
+&lt;aptos-logo&gt;&lt;/aptos-logo&gt;
+
+&lt;script src="../src/index.js"&gt;&lt;/script&gt;
+&lt;script&gt;
+    let current = "light"
+    function toggle(){
+        const logo = document.querySelector("aptos-logo")
+        if (current === 'light') current = 'dark'; else current = 'light'
+        logo.setAttribute('data-theme', current)
+    }
+&lt;/script&gt;
+            </cord>
+        </pre>
+    </div>
     <script src="../src/index.js"></script>
     <script>
         let current = "light"
