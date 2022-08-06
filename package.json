@@ -17,5 +17,8 @@
   "bugs": {
     "url": "https://github.com/olton/aptos-logo/issues"
   },
-  "homepage": "https://github.com/olton/aptos-logo#readme"
+  "homepage": "https://github.com/olton/aptos-logo#readme",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/olton"
+  }
 }
