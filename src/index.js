@@ -176,7 +176,7 @@ template.innerHTML = `
     </div>
 `
 
-class AptosLogo extends HTMLElement {
+export class AptosLogo extends HTMLElement {
     static get observedAttributes() {
         return [ 'data-theme' ];
     }

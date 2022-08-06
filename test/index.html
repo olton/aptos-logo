@@ -42,7 +42,9 @@
             <code>
 &lt;aptos-logo&gt;&lt;/aptos-logo&gt;
 
-&lt;script src="../src/index.js"&gt;&lt;/script&gt;
+&lt;script type="module"&gt;
+    import {AptosLogo} from "../src";
+&lt;/script&gt;
 &lt;script&gt;
     let current = "light"
     function toggle(){
@@ -54,7 +56,9 @@
             </code>
         </pre>
     </div>
-    <script src="../src/index.js"></script>
+    <script type="module">
+        import {AptosLogo} from "../src";
+    </script>
     <script>
         let current = "light"
         function toggle(){
