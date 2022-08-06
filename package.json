@@ -1,6 +1,6 @@
 {
   "name": "@olton/aptos-logo",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "http://logo.aptos.net.ua",
   "main": "src/index.js",
   "source": "src/index.js",
