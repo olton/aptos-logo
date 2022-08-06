@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Aptos Logo Component Test</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-flow: column;
+            height: 100vh;
+        }
+
+        button {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <button onclick="toggle()">Toggle theme</button>
+    <aptos-logo></aptos-logo>
+    <script src="../src/index.js"></script>
+    <script>
+        let current = "light"
+        function toggle(){
+            const logo = document.querySelector("aptos-logo")
+            if (current === 'light') current = 'dark'; else current = 'light'
+            logo.setAttribute('data-theme', current)
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+{
+  "name": "@olton/aptos-logo",
+  "version": "1.0.0",
+  "description": "http://logo.aptos.net.ua",
+  "main": "src/index.js",
+  "source": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/olton/aptos-logo.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/olton/aptos-logo/issues"
+  },
+  "homepage": "https://github.com/olton/aptos-logo#readme"
+}
